@@ -6,6 +6,5 @@ import java.util.List;
 import java.util.UUID;
 
 public interface ArchivoMultimediaRepository extends JpaRepository<ArchivoMultimedia, UUID> {
-    // Buscar archivos de un diario específico
     List<ArchivoMultimedia> findByDiarioId(UUID diarioId);
 }
